@@ -1,0 +1,11 @@
+.MuiBreadcrumbs-root {
+  width: 80%;
+  margin: $smallSpace auto !important;
+  font-size: $desktopSmallFont!important;
+  color: $gray!important;
+
+  a {
+    color: $gray;
+    text-decoration: none;
+  }
+}

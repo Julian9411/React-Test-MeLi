@@ -1,0 +1,97 @@
+.header_container {
+  height: 80px;
+  background-color: $yellow;
+  box-shadow: 0px 2px 3px 0px $shadow;
+
+  img {
+    width: 96px;
+    height: 62px;
+    
+  }
+  div.content_container {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  div.searchBar {
+    width: inherit;
+    position: relative;
+
+    input {
+      width: 100%;
+      height: 50px;
+      border-radius: 5px;
+      border: none;
+      padding-left: 10px;
+      font-size: $desktopMediumFont;
+  
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .MuiButton-root {
+      position: absolute;
+      right: -13px;
+      top: 0;
+      height: 52px;
+      width: 52px;
+      display: flex;
+      justify-content: center;
+      box-shadow: none;
+      background-color: $lightGray;
+      span {
+        margin: 0;
+      }
+      border-radius: 0 5px 5px 0;
+
+      .MuiButton-endIcon {
+        color: $black;
+        width: 30px;
+        height: 30px;
+
+        svg {
+          font-size: 30px;
+        }
+      }
+
+    }
+    .MuiIconButton-root {
+      position: absolute;
+      right: -60px;
+      top: 8px;
+    }
+  }
+
+  @media (max-width: $breakpointPhone) {
+    height: 100px;
+    
+    div.content_container {
+      margin: 0;
+      width: 100%;
+      justify-content: space-evenly;
+    }
+
+    div.searchBar {
+      width: 60%;
+      
+      input {
+        padding: 0;
+        padding-left: 5px;
+        width: 100%;
+        font-size: $desktopSmallFont;
+      }
+
+      .MuiButton-root {
+        
+        right: -5px;
+        height: 50px;
+  
+      }
+    }
+    
+  }
+}

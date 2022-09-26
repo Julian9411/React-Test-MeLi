@@ -1,0 +1,87 @@
+.card_container {
+  background-color: $white;
+  display: flex;
+  border-bottom: 1px solid $lightGray;
+  width: 100%;
+  text-decoration: none;
+  color: $black;
+
+  &:visited {
+    color: $black;
+  }
+
+  .card_containerText {
+    width: 100%;
+  }
+
+  img {
+    width: 180px;
+    height: 180px;
+    margin: $smallSpace;;
+  }
+
+  .card_container_price_place {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      font-weight: normal;
+      font-size: $desktopBigFont;
+      margin: 32px 20px 32px 0;
+    }
+
+    span {
+      font-size: $desktopTinyFont;
+    }
+  }
+
+  .card_container_price {
+    display: flex;
+    align-items: center;
+  }
+
+  .card_free_shipping {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 3px rgba(111,219,117,1);
+    background-color: $green;
+  }
+
+  .card_title_product{ 
+    margin: 0;
+    font-size: $desktopMediumFont;
+    font-weight: normal;
+  }
+
+  @media (max-width: $breakpointPhone) {
+      text-align: center;
+      display: block;
+      
+      img {
+        margin: $smallSpace auto; 
+      }
+
+      .card_containerText {
+        margin-bottom: $smallSpace;
+        
+        .card_container_price_place {
+          justify-content: end;
+          h2 {
+            font-size: $desktopMediumFont;
+          }
+
+          span {
+            width: 60%;
+          }
+          
+        } 
+        h3 {
+          text-align: center;
+        }
+      }
+
+  }
+}

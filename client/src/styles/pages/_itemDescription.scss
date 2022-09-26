@@ -1,0 +1,78 @@
+.item-description-container {
+  display: flex;
+  justify-content: space-between;
+
+  .item-description-container-product {
+    width: 70%;
+
+    img {
+      width: 100%;
+      max-width: 680px;
+    }
+
+    .item-description-container-description {
+      padding: $meddleSpace;
+      padding-right: 0;
+
+      h2 {
+        margin-bottom: $meddleSpace;
+        font-size: $desktopTitleDescriptionFont;
+        font-weight: normal;
+      }
+
+      p {
+        font-size: $desktopDescriptionFont;
+        margin: 0;
+      }
+    }
+  }
+
+  .item-description-container-price {
+    width: 30%;
+    padding-right: $meddleSpace;
+
+    h4 {
+      font-size: $desktopSmallFont;
+      font-weight: normal;
+      margin-top: $meddleSpace;
+      margin-bottom: $smallSpace;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: $meddleSpace;
+      font-size: $desktopBigFont;
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: $meddleSpace;
+      font-size: $desktopPriceFont;
+    }
+
+    .MuiButton-root {
+      background-color: $blue;
+    }
+  }
+
+  @media (max-width: $breakpointPhone) {
+    display: block;
+   
+    .item-description-container-product {
+        width: 100%;
+        img {
+          width: 100%;
+          margin: auto;
+        }
+
+        .item-description-container-description {
+          padding: $smallSpace;
+        }
+    }
+
+    .item-description-container-price {
+      width: 100%;
+    }
+   
+  }
+}
